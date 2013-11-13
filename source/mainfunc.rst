@@ -1,5 +1,5 @@
 The principal functions
-***********************
+=======================
 
 
 The function below is used for configure **PA0 in Input**.

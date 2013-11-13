@@ -1,9 +1,9 @@
 How to connect STM WiFi module to STM32F0-Discovery
-***************************************************
+===================================================
 
 
 Connections for: SAGRAD EvaBoard
-================================
+********************************
 
 .. image:: _static/sagrad_evaboard_connections.jpg
 
@@ -26,7 +26,7 @@ The connections are shown below for
 
 
 Connections for: SILICA STM WiFi EvaBoard
-=========================================
+*****************************************
 
 .. image:: _static/wifievaboard_top.jpg
 
@@ -35,7 +35,7 @@ Connections for: SILICA STM WiFi EvaBoard
 .. image:: _static/connections.jpg
 
 Optionally: RED led
-===================
+*******************
 
 if you connect a led (see schematic below)
 
@@ -48,7 +48,7 @@ and
 , you have the possibility to monitor the waiting from the answer from STM WiFi module.
 
 How to use the software
-=======================
+***********************
 
 **For do the connection**
 (after loaded the SW on STM32F0-Discovery)

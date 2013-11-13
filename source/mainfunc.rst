@@ -6,7 +6,7 @@ The principal functions
 The function below is used for configure **PA0 in Input**.
 At PA0 is connected the Blue Button that is on the STM32F0-Discovery.
 
-.. code::
+::
 
  void PA0_InFloating(void);
 
@@ -14,13 +14,13 @@ At PA0 is connected the Blue Button that is on the STM32F0-Discovery.
 The function below is used for configure in **Output the pins: PC6, PC8 and PC9**.
 On this pins there are connected the Red the Blue and the Green Leds.
 
-.. code::
+::
 
  void PC6PC8andPC9output(void);
 
 The function below does a **delay** in mS.
 
-.. code::
+::
 
  void Delay(__IO uint32_t nTime);
  Delay(500); // it does a delay of 500mS.
@@ -36,7 +36,7 @@ Remember that:
 *   **pBuffer1**
     normally is the RxBuffer
 
-.. code::
+::
 
  uint8_t BuffOneCH(uint8_t* pBuffer1, uint8_t* pBuffer2, uint16_t BufferLength);
 
@@ -50,7 +50,7 @@ This function return:
 
 The function below is used for **clear ** the ** pBuffer**.
 
-.. code::
+::
 
  static void Fill_Buffer(uint8_t *pBuffer, uint16_t BufferLength);
 
@@ -58,7 +58,7 @@ The function below is used to see if: **pBuffer2 is in pBuffer1**.
 
 It's the main search function used in this SW.
 
-.. code::
+::
 
  uint8_t Search_B2inB1(uint8_t* pBuffer1, uint8_t* pBuffer2, uint16_t Buffer1Length, uint16_t Buffer2Length);
 
@@ -70,7 +70,7 @@ This function return:
 
 The function below does the **configuration of USART2**.
 
-.. code::
+::
 
  void STM_EVAL_COM_2_Init(USART_InitTypeDef* USART_InitStruct);
 
@@ -85,7 +85,7 @@ Remember that before to call this function is necessary:
 
 See below.
 
-.. code::
+::
 
  USART_InitTypeDef USART_InitStructure;
  /* USARTx configuration ------------------------------------------------------*/
@@ -114,7 +114,7 @@ First is searched the first character of pBuffer2 in pBuffer1.
 Next the comparation continue until the end of the length
 of pBuffer2 or at the first difference from the two buffer.
 
-.. code::
+::
 
  uint8_t SearchBuffer2inBuffer1(uint8_t* pBuffer1, uint8_t* pBuffer2, uint16_t Buffer1Length, uint16_t Buffer2Length);
 
@@ -129,7 +129,7 @@ This function return:
 
 The function below is used for **configure the STM WiFi module**.
 
-.. code::
+::
 
  uint8_t ConfigureWiFi(void);
 
@@ -207,7 +207,7 @@ In particular, be sure to specify:
 
 For example:
 
-.. code::
+::
 
  uint8_t TxBuffer_RouterName[] = "at+s.ssidtxt=NETGEAR-3G\n\r";
  uint8_t TxBuffer_RouterPW[] = "at+s.scfg=wifi_wpa_psk_text, free\n\r";
@@ -217,7 +217,7 @@ For example:
 The function below is used for
 **check the commands received from STM WiFi module and if they are correct apply them**. Also **test some STM WiFi module errors**.
 
-.. code::
+::
 
  void TestRxCommand(void);
 
@@ -273,7 +273,7 @@ The STM WiFi module errors that (up to now) are tested are:
 
 In case of errors is called the function:
 
-.. code::
+::
 
  ResetSTMWiFIModule_retainsLEDs();
 
@@ -283,7 +283,7 @@ In case of errors is called the function:
 | For do this the function, **LoadAppropite_LedPage**, check the value of:
 | **LedG** and **LedB**.
 
-.. code::
+::
 
  void LoadAppropite_LedPage(void);
 
@@ -295,7 +295,7 @@ The function below is used for ** reset the STM WiFi module.**
 
 This function reload the last configuration loaded to STM WiFI module and clear the RxBuffer.
 
-.. code::
+::
 
  void ResetSTMWiFIModule(void)
 
@@ -303,7 +303,7 @@ The function below is used for ** reset the STM WiFi module but retains the stat
 
 This function call the: ConfigureWiFi();
 
-.. code::
+::
 
  void ResetSTMWiFIModule_retainsLEDs(void)
 
@@ -312,7 +312,7 @@ This function call the: ConfigureWiFi();
 
 At the end of this funtion there is the line:
 
-.. code::
+::
 
  LGflash=1; // Green LED flashing
 

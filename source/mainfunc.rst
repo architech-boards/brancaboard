@@ -1,6 +1,7 @@
 The principal functions
 ***********************
 
+
 The function below is used for configure **PA0 in Input**.
 At PA0 is connected the Blue Button that is on the STM32F0-Discovery.
 
@@ -210,7 +211,7 @@ For example:
  uint8_t TxBuffer_RouterName[] = "at+s.ssidtxt=NETGEAR-3G\n\r";
  uint8_t TxBuffer_RouterPW[] = "at+s.scfg=wifi_wpa_psk_text, free\n\r";
 
-.. image:: images/code.jpg
+.. image:: _static/code.jpg
 
 The function below is used for
 **check the commands received from STM WiFi module and if they are correct apply them**. Also **test some STM WiFi module errors**.

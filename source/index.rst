@@ -1,5 +1,6 @@
-The documentation concerning: FO-WiFi_Lib.v1.0.0
+The documentation concerning FO-WiFi_Lib.v1.0.0
 ================================================
+
 
 :Version: 2.00
 :Copyright: (C)2013 Silica an Avnet company
@@ -8,7 +9,7 @@ The documentation concerning: FO-WiFi_Lib.v1.0.0
 
 **We did this manual with maximum attention, but in any case:**
 
-.. image:: images/warning.jpg
+.. image:: _static/warning.jpg
 
 Introduction
 ************

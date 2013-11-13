@@ -5,7 +5,7 @@ How to connect STM WiFi module to STM32F0-Discovery
 Connections for: SAGRAD EvaBoard
 ================================
 
-.. image:: images/sagrad_evaboard_connections.jpg
+.. image:: _static/sagrad_evaboard_connections.jpg
 
 
 If you need monitor the strings that are sent from STM32F0-Discovery and from STM WiFi module do this:
@@ -18,7 +18,7 @@ and
 **Tera Term**
 .
 
-.. image:: images/J4.jpg
+.. image:: _static/J4.jpg
 
 The connections are shown below for
 **SILICA STM WiFi EvaBoard**
@@ -28,18 +28,18 @@ The connections are shown below for
 Connections for: SILICA STM WiFi EvaBoard
 =========================================
 
-.. image:: images/wifievaboard_top.jpg
+.. image:: _static/wifievaboard_top.jpg
 
-.. image:: images/wifievaboard_solder.jpg
+.. image:: _static/wifievaboard_solder.jpg
 
-.. image:: images/connections.jpg
+.. image:: _static/connections.jpg
 
 Optionally: RED led
 ===================
 
 if you connect a led (see schematic below)
 
-.. image:: images/redled.jpg
+.. image:: _static/redled.jpg
 
 from
 **PC6**
@@ -82,7 +82,7 @@ If you use the
 **led D5 must be ON**
 , this means that the WiFi connection is active.
 
-.. image:: images/sagrad_module.jpg
+.. image:: _static/sagrad_module.jpg
 
 If you use the
 **SILICA STM WiFi EvaBoard**
@@ -90,7 +90,7 @@ If you use the
 **LED2**
 (LINK) must be ON, this means that the WiFi connection is active.
 
-.. image:: images/wifi_evaboard.jpg
+.. image:: _static/wifi_evaboard.jpg
 
 At this point, it is also loaded on the STM WiFi module, the html page named:
 **led.hmtl**
@@ -116,7 +116,7 @@ this page is used to send commands to STM WiFi Module.
     **192.168.0.5/cgi_demo.html**
 
 
-.. image:: images/browser.jpg
+.. image:: _static/browser.jpg
 
 
 The custom commands (implemented on STM32F0-Discovery) for control the STM WiFi module are:
@@ -153,5 +153,5 @@ page after every command send using the
 **cgi demo.html**
 page.
 
-.. image:: images/led_html.jpg
+.. image:: _static/led_html.jpg
 

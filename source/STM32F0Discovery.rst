@@ -1,6 +1,6 @@
+
 How to connect STM WiFi module to STM32F0-Discovery
 ===================================================
-
 
 Connections for: SAGRAD EvaBoard
 ********************************

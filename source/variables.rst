@@ -17,7 +17,7 @@ The Leds flashing
  uint8_t LBflash=0; // Led Blue 0==FlashOFF 1==FlashON
  uint8_t LGflash=0; // Led Green 0==FlashOFF 1==FlashON
 
-| The variables below are used to configure the STM WiFi module.
+| The underlying variables are used to configure the STM WiFi module.
 | **Remember to configure the parameters in according to your WiFi network.**
 | In particular, be sure to specify:
 
@@ -35,7 +35,7 @@ The Leds flashing
  uint8_t TxBuffer_RouterSoftReset[] = "at+cfun=1\n\r";
 
 See also the function: `ConfigureWiFi <#ConfigureWiFi>`_
-The variables below are used to test the STM WiFi module.
+The underlying variables are used to test the STM WiFi module.
 
 ::
 
@@ -58,7 +58,7 @@ Virtual EEPROM emulation address defined by the user:
 **not used in this example**
 .
 
-I left it because it can be useful for some future application.
+I left because it can be useful for some future application.
 For more info see here:
 `http://www.emcu.it/STM32F0xx/STM32F0-USART1-USART2-SysTick-IO/STM32F0-USART1-USART2-SysTick-IO.html <http://www.emcu.it/STM32F0xx/STM32F0-USART1-USART2-SysTick-IO/STM32F0-USART1-USART2-SysTick-IO.html>`_
 

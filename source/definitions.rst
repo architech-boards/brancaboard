@@ -3,7 +3,7 @@ The definitions
 ===============
 
 
-The commands for control the leds are show below.
+The commands for control the leds are shown below.
 
 .. code::
 
@@ -17,7 +17,7 @@ The commands for control the leds are show below.
 
 .. warning::
 
- There are also two commands for flashing the LEDs that are in section variables and are:
+ In the section of the variables there are two commands to flash the LED:
  
  | uint8_t LBflash=0; // Led Blue 0==FlashOFF 1==FlashON
  | uint8_t LGflash=0; // Led Green 0==FlashOFF 1==FlashON
@@ -48,16 +48,14 @@ This variables are used in the file **stm32f0xx_it.c** under systick interrupt, 
  }
 
 
-Also there are two variable used for remember the status of Green and Blue LEDs that are:
+Also there are two variables used for remember the status of Green and Blue LEDs that are:
 
 .. code::
 
  uint8_t LedG=0; // Led Greem 0==OFF 1==ON
  uint8_t LedB=0; // Led Blue 0==OFF 1==ON
 
-The custom commands (implemented on STM32F0-Discovery) for control the
-
-STM WiFi module are:
+Custom commands (implemented on STM32F0-Discovery) to control STM WiFi module are:
 
 
 * **lgon** – TurnON the green LED
@@ -73,7 +71,7 @@ STM WiFi module are:
 * **reset** – reset the STM WiFi module, it reload the WiFi configuration
 
 
-The definitions are show below.
+The definitions are shown below.
 
 .. code::
 

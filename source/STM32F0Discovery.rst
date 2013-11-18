@@ -8,7 +8,7 @@ Connections for: SAGRAD EvaBoard
 .. image:: _static/sagrad_evaboard_connections.jpg
 
 
-If you need monitor the strings that are sent from STM32F0-Discovery and from STM WiFi module do this:
+If you need to monitor the strings that are sent from STM32F0-Discovery and STM WiFi module do this:
 
 Remove the jumper
 **J9**
@@ -45,7 +45,7 @@ from
 **PC6**
 and
 **GND**
-, you have the possibility to monitor the waiting from the answer from STM WiFi module.
+, you have the ability to monitor the waiting for the response from the STM WiFi module.
 
 How to use the software
 ***********************
@@ -65,7 +65,7 @@ After some seconds,
 **Blue**
 and
 **Green**
-leds are flashing and this means that the STM WiFi module is trying to connect to the WiFi Router.
+LED flash, and this means that the module STM WiFi is trying to connect to your WiFi router.
 
 **After**
 **2**
@@ -74,7 +74,7 @@ leds are flashing and this means that the STM WiFi module is trying to connect t
 **Blue**
 and
 **Green**
-leds go OFF and this means that the connection is done.
+LEDs turn OFF and this means that the connection is made.
 
 If you use the
 **SAGRAD WiFi module**
@@ -102,9 +102,9 @@ Now open the html page:
 **cgi_demo.html**
 this page is used to send commands to STM WiFi Module.
 
-*   For do this you must know the IP address of the STM WiFi module.
+*   To do this you need to know the IP address of the STM WiFi module.
 
-*   To find it I suggest to use the
+*   To find it I recommend you to use the
     **Angry IP Scanner**
     .
 
@@ -149,7 +149,7 @@ You have the possibility to see the LEDs status in the page:
 
 Remember to reload the
 **led.html **
-page after every command send using the
+page after each command sent using the
 **cgi demo.html**
 page.
 

@@ -1,18 +1,18 @@
 
-The principal functions
+The important functions
 =======================
 
 
-The function below is used for configure **PA0 in Input**.
-At PA0 is connected the Blue Button that is on the STM32F0-Discovery.
+The function below is used to configure the **PA0 in Input**.
+At PA0 is connected the Blue Button that is located on the STM32F0-Discovery.
 
 ::
 
  void PA0_InFloating(void);
 
 
-The function below is used for configure in **Output the pins: PC6, PC8 and PC9**.
-On this pins there are connected the Red the Blue and the Green Leds.
+The function below is used to configure the **Output the pins: PC6, PC8 and PC9**.
+On this pins are connected the Red the Blue and the Green Leds.
 
 ::
 
@@ -26,7 +26,7 @@ The function below does a **delay** in mS.
  Delay(500); // it does a delay of 500mS.
 
 
-The function below is used for **find pBuffer2** (single character) **in pBuffer1**.
+The function below is used to **find pBuffer2** (single character) **in pBuffer1**.
 
 Remember that:
 
@@ -40,7 +40,7 @@ Remember that:
 
  uint8_t BuffOneCH(uint8_t* pBuffer1, uint8_t* pBuffer2, uint16_t BufferLength);
 
-This function return:
+This function returns:
 
 *   **PASS**
     if pBuffer2 is present in pBuffer1
@@ -62,20 +62,20 @@ It's the main search function used in this SW.
 
  uint8_t Search_B2inB1(uint8_t* pBuffer1, uint8_t* pBuffer2, uint16_t Buffer1Length, uint16_t Buffer2Length);
 
-This function return:
+This function returns:
 
 *   **PASS** if pBuffer2 is present in pBuffer1
 
 *   **FAIL** if pBuffer2 is not present in pBuffer1
 
-The function below does the **configuration of USART2**.
+The function below does the **configuration of the USART2**.
 
 ::
 
  void STM_EVAL_COM_2_Init(USART_InitTypeDef* USART_InitStruct);
 
 
-Remember that before to call this function is necessary:
+Remember, before you call this function, you must:
 
 *   Declare: USART_InitTypeDef USART_InitStructure;
 
@@ -107,12 +107,12 @@ See below.
  STM_EVAL_COM_2_Init(&USART_InitStructure);
 
 
-**This function is not used**, but I left it because it can be useful for some future application.
+**This function is not used**, but I left because it can be useful for some future application.
 
 The function below is used for find: pBuffer2 in pBuffer1.
 First is searched the first character of pBuffer2 in pBuffer1.
-Next the comparation continue until the end of the length
-of pBuffer2 or at the first difference from the two buffer.
+Next the comparisons continue until the end of the length
+of pBuffer2 or the first difference of the two buffers.
 
 ::
 
@@ -194,7 +194,7 @@ This function return:
 
 .. warning::
 
- In the **main.c** there are the strings definitions used for connect the STM WiFi module to your WiFi Router.
+ In the **main.c** there are definitions of strings used to connect the STM WiFi module to your WiFi Router.
  **Remember to configure the parameters in according to your WiFi network.**
 
 In particular, be sure to specify:
@@ -221,7 +221,7 @@ The function below is used for
 
  void TestRxCommand(void);
 
-Up to now the commands accepted are:
+Until now commands accepted are:
 
 *   **lgon**
     – TurnON the green LED
@@ -241,7 +241,7 @@ Up to now the commands accepted are:
 *   **reset**
     – STM32F0-Discovery reload the WiFi configuration to the STM WiFi module.
 
-    During the reset the Blue and Green Leds are flashing.
+    During the reset, the Blue and Green Leds are flashing.
 
 The STM WiFi module errors that (up to now) are tested are:
 
@@ -271,7 +271,7 @@ The STM WiFi module errors that (up to now) are tested are:
     - From network means FAIL
     Variable → TxBuffer_FAIL5
 
-In case of errors is called the function:
+in case of errors is called the function:
 
 ::
 
@@ -280,7 +280,7 @@ In case of errors is called the function:
 
 | The function below is used for
 | **upload into the STM WiFi module the appropriate led.html** **page**.
-| For do this the function, **LoadAppropite_LedPage**, check the value of:
+| To perform this function, **LoadAppropite_LedPage**, check the value of:
 | **LedG** and **LedB**.
 
 ::
@@ -293,7 +293,7 @@ I left this function in software for future implementations.
 
 The function below is used for ** reset the STM WiFi module.**
 
-This function reload the last configuration loaded to STM WiFI module and clear the RxBuffer.
+This charging's last loaded configuration to the module STM WiFI and clears the RxBuffer.
 
 ::
 

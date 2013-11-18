@@ -8,7 +8,7 @@ The documentation concerning FO-WiFi_Lib.v1.0.0
 :Date: 13 november 2013
 
 
-**We did this manual with maximum attention, but in any case:**
+**We made this manual very carefully, but in any case:**
 
 .. image:: _static/warning.jpg
 
@@ -34,7 +34,7 @@ This SW is certainly not exhaustive but is intended to give you the basic functi
 As improvements are recommended to implement error handling more in-depth than is currently implemented.
 
 
-**Before to continue please see**
+**Before you continue please see**
 `this <http://www.emcu.it/SILICA-STDay-2013/HO_WebServer_VerForC.pdf>`_
 **tutorial and read the manual:**
 `STM_WiFi_info <http://www.emcu.it/WiFi/STM_WiFi_info.pdf>`_

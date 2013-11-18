@@ -5,7 +5,7 @@ The definitions
 
 The commands for control the leds are shown below.
 
-.. code::
+::
 
  // Define the commands for the Red, Blue Led OFF and ON
  #define BLed_OFF GPIO_ResetBits(GPIOC, GPIO_Pin_8) // Blue LED OFF
@@ -24,7 +24,7 @@ The commands for control the leds are shown below.
 
 This variables are used in the file **stm32f0xx_it.c** under systick interrupt, see below.
 
-.. code::
+::
 
  /**
  * @brief This function handles SysTick Handler.
@@ -50,7 +50,7 @@ This variables are used in the file **stm32f0xx_it.c** under systick interrupt, 
 
 Also there are two variables used for remember the status of Green and Blue LEDs that are:
 
-.. code::
+::
 
  uint8_t LedG=0; // Led Greem 0==OFF 1==ON
  uint8_t LedB=0; // Led Blue 0==OFF 1==ON
@@ -73,7 +73,7 @@ Custom commands (implemented on STM32F0-Discovery) to control STM WiFi module ar
 
 The definitions are shown below.
 
-.. code::
+::
 
  #define RxLBOFF "lboff" // Led Blue OFF
  #define RxLBON "lbon" // Led Blue ON
@@ -86,14 +86,14 @@ The definitions are shown below.
 
 The received strings used for test the status of STM WiFi are below
 
-.. code::
+::
 
  #define WiFi_IP "WiFi Up" // This means that STM WiFi is connected to WiFi Network
  #define WiFi_OK "OK" // This is the answer STM WiFi if a command is successful
 
 The defines below are in the file: **Definizioni.h**
 
-.. code::
+::
 
  #define RXBUFFERSIZE 0x7FE // 2Kbyte
  #define rifTLampeggio 500 // 500 == 500mS is flashing time

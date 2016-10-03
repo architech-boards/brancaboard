@@ -4,7 +4,7 @@ The documentation concerning FO-WiFi_Lib.v1.0.0
 
 
 :Version: 2.00
-:Copyright: (C)2013 Silica an Avnet company
+:Copyright: (C)2016 Avnet Silica company
 :Date: 13 november 2013
 
 
